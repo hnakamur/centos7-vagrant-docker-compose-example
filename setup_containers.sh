@@ -16,7 +16,8 @@ WorkingDirectory=/vagrant/containers
 [Install]
 WantedBy=multi-user.target
 EOF
-  systemctl daemon-reload
-  systemctl enable daemon-reload
-  systemctl start daemon-reload
+
+  sudo systemctl daemon-reload
+  sudo systemctl enable docker-compose
+  sudo systemctl start docker-compose
 fi
